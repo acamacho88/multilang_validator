@@ -25,3 +25,14 @@ The second part is supposed to correct faulty column
 header/tab names HOWEVER this should only be run if the
 tabs/columns are confirmed to be in the same order in both
 files.
+
+## Testing
+
+I'm using an editor with almost no content to test,
+camacho1@walkme.com
+
+I tried opening a freshly exported file and saving it with
+openpyxl without making changes and couldn't do it....when
+I copy and paste each sheet from the exported file into the
+output, then it works, so it seems that openpyxl is
+changing something with the file, presumably formatting.
