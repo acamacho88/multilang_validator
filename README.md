@@ -31,8 +31,8 @@ files.
 I'm using an editor with almost no content to test,
 camacho1@walkme.com
 
-I tried opening a freshly exported file and saving it with
-openpyxl without making changes and couldn't do it....when
-I copy and paste each sheet from the exported file into the
-output, then it works, so it seems that openpyxl is
-changing something with the file, presumably formatting.
+I've found if you try immediately importing the output
+of the program, backoffice won't accept it.  If you open
+the file and just hit the save button without making any
+changes, it will then accept it.  Don't know why, but I
+don't think it's worth looking too much into.
