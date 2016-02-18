@@ -47,8 +47,7 @@ for n in range(ntempsheets):
     for x in range(len(temp_curr.rows[0])):
         error_cell = error_curr.cell(row=1,column=(x+1))
         temp_cell = temp_curr.cell(row=1,column=(x+1))
-        if n == 0:
-            print error_cell.value, temp_cell.value
+
         if error_cell.value != temp_cell.value:
             error_cell.value = temp_cell.value
 
