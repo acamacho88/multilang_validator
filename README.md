@@ -36,3 +36,8 @@ of the program, backoffice won't accept it.  If you open
 the file and just hit the save button without making any
 changes, it will then accept it.  Don't know why, but I
 don't think it's worth looking too much into.
+
+## To-do list
+
+1) Balloons might have been replaced, their IDs no longer
+match

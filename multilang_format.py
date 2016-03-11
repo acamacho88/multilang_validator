@@ -19,6 +19,7 @@ nerrorsheets = len(error_sheets)
 
 if ntempsheets != nerrorsheets:
     print "Unequal number of sheets: template has " + str(ntempsheets) + ", error has " + str(nerrorsheets)
+    # Store the extra sheets that exist in either file
     extra_template = list(set(template_sheets) - set(error_sheets))
     extra_error = list(set(error_sheets) - set(template_sheets))
     if extra_template:
@@ -26,17 +27,18 @@ if ntempsheets != nerrorsheets:
         for n in extra_template:
             print n
     if extra_error:
+        print ""
         print "The customer copy has the following extra sheets: "
         for n in extra_error:
             print n
     sys.exit()
 
 for n in range(ntempsheets):
-    # Set current sheet template name, current template sheet
+    # Store current sheet template name, current template sheet
     temp_name_curr = template_sheets[n]
     temp_curr = template.get_sheet_by_name(temp_name_curr)
 
-    # Set error sheet template name, error template sheet
+    # Store error sheet template name, error template sheet
     error_name_curr = error_sheets[n]
     error_curr = errors.get_sheet_by_name(error_name_curr)
 
